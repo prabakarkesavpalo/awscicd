@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: todo.sh
+    destination: /home/ec2-user/todo
+hooks:
+  BeforeInstall:
+    - location: todo.sh
+      timeout: 180
+  AfterInstall:
+    - location: todo.sh
+      timeout: 180
+  ApplicationStart:
+    - location: todo.sh
+      timeout: 180
+  ValidateService:
+    - location: todo.sh
+      timeout: 180
+      runas: root
