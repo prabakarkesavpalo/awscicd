@@ -1,0 +1,18 @@
+version: 0.2
+
+phases: 
+    install:
+        commands:
+            - echo "installing" 
+    pre_build:
+        commands: 
+            - echo "we are in the pre build phase" 
+            - echo "1. Install dependencies 2. Py libraries 3. Virtual Env setup 4. copy the code" 
+    build:
+        commands:
+            - echo "we are in the build block" 
+    post_build:
+        commands:
+            - echo "we are in the post build phase" 
+            - echo "Connectivity check - 1. SQL server 2. ESB 3. Insight 4. cron jobs" 
+            
